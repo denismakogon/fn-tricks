@@ -1,6 +1,6 @@
 # An example of a recursive Fn function
 
-## It's not a real tail recursion, but the way to keep function running
+## it's not a real tail recursion, but the way to keep function running
 
 That's said, it's not a tail recursion, it's just a way to keep your function running as long as it necessary.
 
@@ -13,7 +13,7 @@ Otherwise, you need a microservice, not a function.
 
 Redirect requires to keep original connection up and you HTTP client will likely follow the redirects.
 
-## Recursive Fn function needs to be asynchronous
+## recursive Fn function needs to be asynchronous
 
 In case of sync execution, Fn will keep the connection between a caller and a function within the call timeout, but not in case of async execution.
 Fn behaves differently in terms of async calls. A caller will get the call ID for each execution, so, there would be no blocking connections.
